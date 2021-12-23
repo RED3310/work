@@ -68,9 +68,9 @@ function style() {
 
 function scripts() {
     return src([
-        path.src.js,
         "node_modules/jquery/dist/jquery.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+        path.src.js
     ])
 
         .pipe(concat("scripts.min.js"))

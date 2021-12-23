@@ -1,3 +1,4 @@
+
 header {
 background-color: #ffff;
   .bottom-line {
@@ -100,7 +101,7 @@ main {
     font-size: 17px;
     &:hover { color: #0094DF !important;}
   } 
-  .border-btm { border-bottom: 1px dashed #74C241 !important; }
+  .border-btm { border-bottom: 1px dashed #74C241 !important; line-height: 1 !important; }
 }
 
 .content-2 {
@@ -149,7 +150,8 @@ main {
     padding: 0.25em 0.6em;
     border-radius: 1rem;
     font-size: 12px;
-    left: 4.4rem;
+    left: 4.6rem;
+    top: -0.3rem;
   }
 }
 

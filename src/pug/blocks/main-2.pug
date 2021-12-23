@@ -11,7 +11,7 @@ main
         span
           button.btn.btn-success.px-4.py-2.mr-4(type='button') Создать вакансию
           span.text-nowrap.text-success.mr-2 Доступна 
-            span.border-btm 21 из 630 публикаций
+            button.text-success.border-btm(type='button' data-container='body' data-toggle='popover' data-placement='bottom' data-content='...') 21 из 630 публикаций
         ul.nav.mt-3.mt-lg-0
           li: a(href="#") Только размещенные
                 span.arrow-2
@@ -24,15 +24,14 @@ main
         li.vacancy__item.d-flex.align-items-center.my-2
           a(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
             span.arrow-2-left-right Валентина Кущ
-              a.ml-2.align-middle(href="#")
-                img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+              a.ml-2.align-middle(href="#"): img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
               span.ml-2.text-secondary 4
         #collapseExample.collapse.resize-xs
           .card.card-body
             .row.card__iten.justify-content-between
               .col-12.col-md-10
                 a.font-weight-bold(href="#") Бухгалтер з облiку,
-                  span.text-muted  12 300 грн
+                span.text-muted  12 300 грн
                 p Киев, вулиця Академiка Бутлерова, 1
                 .badge.badge-warning.text-wrap.mr-1
                   span.arrow-3
@@ -68,8 +67,7 @@ main
                   |
                   br
                   | (Шевченкiвський район),
-                  span.text-muted  5 500 – 11 500 грн*
-
+                span.text-muted  5 500 – 11 500 грн*
                 .my-2 Киев 
                   .badge.badge-info.text-wrap.mr-1
                     span Тест
@@ -107,8 +105,7 @@ main
         li.vacancy__item.d-flex.align-items-center.my-2
           a(data-toggle='collapse' href='#collapseExample1' role='button' aria-expanded='false' aria-controls='collapseExample')
             span.arrow-2-left-right Березан Елена
-              a.ml-2.align-middle(href="#")
-                img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+              a.ml-2.align-middle(href="#"): img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
               span.ml-2.text-secondary 529
         #collapseExample1.collapse.resize-xs
           .card.card-body
@@ -116,8 +113,7 @@ main
         li.vacancy__item.d-flex.align-items-center.my-2
           a(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
             span.arrow-2-left-right Бондарук Анжелика
-              a.ml-2.align-middle(href="#")
-                img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+              a.ml-2.align-middle(href="#"): img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
               span.ml-2.text-secondary 19
         #collapseExample2.collapse.resize-xs
           .card.card-body

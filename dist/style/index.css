@@ -10156,6 +10156,7 @@ main .arrow-3 {
 }
 .content .border-btm {
   border-bottom: 1px dashed #74C241 !important;
+  line-height: 1 !important;
 }
 
 .content-2 {
@@ -10202,7 +10203,8 @@ main .arrow-3 {
   padding: 0.25em 0.6em;
   border-radius: 1rem;
   font-size: 12px;
-  left: 4.4rem;
+  left: 4.6rem;
+  top: -0.3rem;
 }
 
 .footer {
@@ -10262,6 +10264,7 @@ main .arrow-3 {
 
   .content-2 .badge-danger {
     left: 8.4rem;
+    top: 0.2rem;
   }
 
   .responses h2 {

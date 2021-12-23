@@ -1,0 +1,37 @@
+header.pt-4
+  .container
+    .header-top.d-flex.justify-content-end
+      .dropdown.mr-3
+        a#dropdownMenuLanguage(href='#' role='button' data-toggle='dropdown' aria-expanded='false') 
+          |Русский 
+          span.arrow-drop
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuLanguage')
+          a.dropdown-item(href='#') Українська
+          a.dropdown-item(href='#') Русский
+          a.dropdown-item(href='#') English
+      a(href="#") Соискателю
+        span.arrow
+    .header-bottom
+      .navbar.py-3.px-0 
+        a.logo.ml-0(href="#")
+          img.d-none.d-sm-block(src="/images/svg/Group 39.svg", alt="work")
+          img.d-sm-none(src="/images/svg/work-ua-bullseye.svg", alt="work")
+        ul.nav 
+          li.nav__item
+            a.d-none.d-lg-block(href="#") Найти кандидатов
+            a.d-flex.flex-column-reverse.d-md-none(href="#") Резюме
+              img(src="/images/svg/Search.svg", alt="search" width="22" height="22")
+          li.nav__item
+            a.d-none.d-md-block(href="#") Создать вакансию
+            a.d-flex.flex-column-reverse.d-md-none(href="#") Вакансия
+              img(src="/images/svg/Group 51.svg", alt="search" width="22" height="22")
+          li.nav__item 
+            a.d-none.d-md-block(href="#") Реактор
+            a.d-flex.flex-column-reverse.d-md-none(href="#") Реактор
+              img(src="/images/svg/company.svg", alt="search" width="22" height="22")        
+          li.nav__item.dropdown.d-none.d-md-block
+            a.p-3(href="#") 
+              img(src="/images/svg/Vector.svg", alt="" width="22" height="29")
+              span.badge.badge-danger.text-wrap 99+
+  hr.bottom-line   
+

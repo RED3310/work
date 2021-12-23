@@ -1,0 +1,129 @@
+main 
+  .container 
+    .content.content-2.pt-3.pb-5
+      a(href="#") 
+        span.arrow Личный раздел
+      h2.font-weight-bold Вакансии и отклики
+        a.ml-2.align-middle(href="#")
+          img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+          //- span.ml-2.text-muted 4
+      .content__vacancy.my-3
+        span
+          button.btn.btn-success.px-4.py-2.mr-4(type='button') Создать вакансию
+          span.text-nowrap.text-success Доступна 
+            span.border-btm 21 из 630 публикаций
+        ul.nav.mt-3.mt-md-0
+          li: a(href="#") Только размещенные
+                span.arrow-2
+          li.text-muted &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          li
+            form.search-form(action='#')
+              label.m-0(for="searchInput") 
+                a.search-link.ml-2(href="#"): img(src="/images/svg/Vector (3).svg", alt="vector")
+                input.search#searchInput(type='search' name='q' placeholder='Поиск по сайту' value='')    
+      ul
+        li.d-flex.align-items-center.my-2
+          a(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+            span.arrow-2-left-right Валентина Кущ
+              a.ml-2.align-middle(href="#")
+                img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+              span.ml-2.text-secondary 4
+        #collapseExample.collapse.resize-xs
+          .card.card-body
+            .row.card__iten.justify-content-between
+              .col-12.col-md-10
+                a.font-weight-bold(href="#") Бухгалтер з облiку,
+                  span.text-muted  12 300 грн
+                p Киев, вулиця Академiка Бутлерова, 1
+                .badge.badge-warning.text-wrap.mr-1
+                  span.arrow-3
+                .badge.badge-success.text-wrap.mr-3
+                  span Standard
+                span.text-muted  20.02.20 – 13.03.20
+                ul.nav.my-2
+                  li: a(href="#") Подобрать резюме
+                  li: a(href="#") &nbsp;&middot;&nbsp;
+                  li: a(href="#") Сделать Premium
+                  li: a(href="#") &nbsp;&middot;&nbsp;
+                  li: a(href="#") Обновить дату размещения
+                  li: a(href="#") &nbsp;&middot;&nbsp;
+                  li
+                    .dropdown.mr-3
+                      a#dropdownMenuCard1(href='#' role='button' data-toggle='dropdown' aria-expanded='false') 
+                        |Еще
+                        span.arrow-2
+                      .dropdown-menu.dropdown-menu-left(aria-labelledby='dropdownMenuCard1')
+                        a.dropdown-item(href='#') 1111
+                        a.dropdown-item(href='#') 2222
+                        a.dropdown-item(href='#') 3333
+              .col-auto
+                .responses.text-center
+                  a.d-flex.flex-md-column.align-items-center(href="#") 
+                    h2.m-0.font-weight-bold 217
+                    span.font-weight-normal.ml-2 откликов
+                    span.badge.badge-danger.text-wrap 9
+            hr
+            .row.card__iten.justify-content-between
+              .col-12.col-md-10
+                a.font-weight-bold(href="#") Керiвник департаменту маркетингових проєктiв
+                  |
+                  br
+                  | (Шевченкiвський район),
+                  span.text-muted  5 500 – 11 500 грн*
+
+                .my-2 Киев 
+                  .badge.badge-info.text-wrap.mr-1
+                    span Тест
+                  .badge.badge-light.text-wrap.mr-1
+                    span Автопродление
+
+                .badge.badge-primary.text-wrap.mr-1
+                  span Standard Plus
+                  span 
+                svg(width='10' height='16' viewbox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M5.95313 6.42875L7.70407 0.5L0.0178223 9.57094H4.04689L2.29626 15.5L9.9822 6.42875H5.95313ZM2.04001 8.63344L5.54626 4.49562L4.69938 7.36625H7.96001L4.45376 11.5041L5.30063 8.63344H2.04001Z' fill='#ABB2BA')
+                span.text-muted  20.02.20 – 13.03.20
+                ul.nav.my-2
+                  li: a(href="#") Подобрать резюме
+                  li: a(href="#") &nbsp;&middot;&nbsp;
+                  li: a(href="#") Сделать Premium
+                  li: a(href="#") &nbsp;&middot;&nbsp;
+                  li: a(href="#") Обновить дату размещения
+                  li: a(href="#") &nbsp;&middot;&nbsp;
+                  li
+                    .dropdown.mr-3
+                      a#dropdownMenuCard2(href='#' role='button' data-toggle='dropdown' aria-expanded='false') 
+                        |Еще
+                        span.arrow-2
+                      .dropdown-menu.dropdown-menu-left(aria-labelledby='dropdownMenuCard2')
+                        a.dropdown-item(href='#') 1111
+                        a.dropdown-item(href='#') 2222
+                        a.dropdown-item(href='#') 3333
+              .col-auto
+                .responses.text-center
+                  a.d-flex.flex-md-column.align-items-center(href="#") 
+                    h2.m-0.font-weight-bold 125
+                    span.font-weight-normal.ml-2 откликов
+                    span.badge.badge-danger.text-wrap 37
+        li.d-flex.align-items-center.my-2
+          a(data-toggle='collapse' href='#collapseExample1' role='button' aria-expanded='false' aria-controls='collapseExample')
+            span.arrow-2-left-right Березан Елена
+              a.ml-2.align-middle(href="#")
+                img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+              span.ml-2.text-secondary 529
+        #collapseExample1.collapse.resize-xs
+          .card.card-body
+            p У этого пользователя нет вакансий.
+        li.d-flex.align-items-center.my-2
+          a(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+            span.arrow-2-left-right Бондарук Анжелика
+              a.ml-2.align-middle(href="#")
+                img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19") 
+              span.ml-2.text-secondary 19
+        #collapseExample2.collapse.resize-xs
+          .card.card-body
+            p У этого пользователя нет вакансий.
+      .content__vacancy.my-4
+        span
+          button.btn.btn-success.px-4.py-2.mr-4(type='button') Создать вакансию
+        a(href="#") Удаленные вакансии

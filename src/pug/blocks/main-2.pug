@@ -10,19 +10,18 @@ main
       .content__vacancy.my-3
         span
           button.btn.btn-success.px-4.py-2.mr-4(type='button') Создать вакансию
-          span.text-nowrap.text-success Доступна 
+          span.text-nowrap.text-success.mr-2 Доступна 
             span.border-btm 21 из 630 публикаций
-        ul.nav.mt-3.mt-md-0
+        ul.nav.mt-3.mt-lg-0
           li: a(href="#") Только размещенные
                 span.arrow-2
-          li.text-muted &nbsp;&nbsp;&middot;&nbsp;&nbsp;
-          li
-            form.search-form(action='#')
-              label.m-0(for="searchInput") 
-                a.search-link.ml-2(href="#"): img(src="/images/svg/Vector (3).svg", alt="vector")
-                input.search#searchInput(type='search' name='q' placeholder='Поиск по сайту' value='')    
-      ul
-        li.d-flex.align-items-center.my-2
+          li.text-muted &nbsp;&nbsp;&nbsp;&middot;&nbsp;
+          li: form(action="#") 
+                label.m-0(for="searchInput") 
+                  a.ml-2(role='button'): img(src="/images/svg/Vector (3).svg", alt="vector")  
+                  input.search#searchInput(type='search' name='q' placeholder='Поиск по сайту' value='')  
+      ul.vacancy
+        li.vacancy__item.d-flex.align-items-center.my-2
           a(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
             span.arrow-2-left-right Валентина Кущ
               a.ml-2.align-middle(href="#")
@@ -105,7 +104,7 @@ main
                     h2.m-0.font-weight-bold 125
                     span.font-weight-normal.ml-2 откликов
                     span.badge.badge-danger.text-wrap 37
-        li.d-flex.align-items-center.my-2
+        li.vacancy__item.d-flex.align-items-center.my-2
           a(data-toggle='collapse' href='#collapseExample1' role='button' aria-expanded='false' aria-controls='collapseExample')
             span.arrow-2-left-right Березан Елена
               a.ml-2.align-middle(href="#")
@@ -114,7 +113,7 @@ main
         #collapseExample1.collapse.resize-xs
           .card.card-body
             p У этого пользователя нет вакансий.
-        li.d-flex.align-items-center.my-2
+        li.vacancy__item.d-flex.align-items-center.my-2
           a(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
             span.arrow-2-left-right Бондарук Анжелика
               a.ml-2.align-middle(href="#")

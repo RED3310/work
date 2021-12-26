@@ -10026,19 +10026,11 @@ h3 {
   vertical-align: sub !important;
 }
 
-.dropdown.show .arrow-up {
-  transform: rotate(180deg);
-  line-height: 0;
+.fs-17 {
+  font-size: 17px;
 }
-
-.active-down {
-  transform: rotate(90deg);
-  line-height: 0;
-}
-
-.active-up {
-  transform: rotate(180deg);
-  line-height: 0;
+.fs-24 {
+  font-size: 24px;
 }
 
 .material-icons {
@@ -10165,7 +10157,6 @@ header .header-bottom .badge-danger {
 .content a {
   color: #0094DF !important;
   font-weight: 400;
-  font-size: 17px;
 }
 .content a:hover {
   color: #0094DF !important;
@@ -10226,29 +10217,44 @@ header .header-bottom .badge-danger {
   line-height: 1 !important;
 }
 
-.footer {
+footer {
   background-color: #ffff;
 }
-.footer .bottom-line {
+footer .bottom-line {
   background: #E42469;
   height: 1px;
   border: 0;
   margin: 0;
 }
-.footer .dropdown a {
+footer .dropdown a {
   color: #0094DF !important;
 }
-.footer .dropdown a:hover {
+footer .dropdown a:hover {
   color: #0094DF !important;
 }
-.footer .nav-color a {
+footer .nav-color a {
   color: #6B7886 !important;
 }
-.footer .nav-color a:hover {
+footer .nav-color a:hover {
   color: #6B7886 !important;
 }
-.footer p {
+footer p {
   color: #6B7886;
+}
+
+.dropdown.show .arrow-up {
+  transform: rotate(180deg);
+  line-height: 0;
+}
+
+.active-down {
+  transform: rotate(90deg);
+  line-height: 0;
+}
+
+.active-up {
+  transform: rotate(180deg);
+  line-height: 0;
 }
 
 @media (max-width: 767.98px) {
@@ -10257,6 +10263,10 @@ header .header-bottom .badge-danger {
   }
   header .header-bottom a {
     font-size: 14px;
+  }
+
+  .fs-24 {
+    font-size: 19px;
   }
 
   .content .badge-danger {

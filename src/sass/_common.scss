@@ -41,7 +41,6 @@ header {
   a {
     color: #0094DF !important;
     font-weight: 400;
-    font-size: 17px;
     &:hover { color: #0094DF !important;}
   } 
 
@@ -108,7 +107,7 @@ header {
   }
 
 
-.footer {
+footer {
   .bottom-line {
     background: #E42469;
     height: 1px;
@@ -128,5 +127,11 @@ header {
   p { color: #6B7886; }
 }
 
+//arrow-rotate
+.dropdown.show {
+  .arrow-up{ transform: rotate(180deg); line-height: 0; }
+}
+.active-down{ transform: rotate(90deg); line-height: 0;} 
+.active-up { transform: rotate(180deg); line-height: 0;} 
 
 

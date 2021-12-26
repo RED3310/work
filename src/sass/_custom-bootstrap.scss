@@ -88,11 +88,13 @@
   vertical-align: sub !important;
 }
 
-.dropdown.show {
-  .arrow-up{ transform: rotate(180deg); line-height: 0; }
+.fs {
+  &-17 {
+    font-size: 17px;
+  }
+  &-24 {
+    font-size: 24px;
+  }
 }
-
-.active-down{ transform: rotate(90deg); line-height: 0;} 
-.active-up { transform: rotate(180deg); line-height: 0;} 
 
 

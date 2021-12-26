@@ -2,15 +2,15 @@ header.pt-4
   .container
     .header-top.d-flex.justify-content-end
       .dropdown.mr-3
-        a#dropdownMenuLanguage(href='#' role='button' data-toggle='dropdown' aria-expanded='false') 
-          |Русский 
-          span.arrow-drop
+        a#dropdownMenuLanguage.l-focus(role='button' data-toggle='dropdown' aria-expanded='false') 
+          |Русский
+          span.material-icons.md-20.align-sub.arrow-up expand_more
         .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuLanguage')
           a.dropdown-item(href='#') Українська
           a.dropdown-item(href='#') Русский
           a.dropdown-item(href='#') English
-      a(href="#") Соискателю
-        span.arrow
+      a.l-focus(href="#") Соискателю
+        span.material-icons.md-20.align-sub navigate_next
     .header-bottom
       .navbar.py-3.px-0 
         a.logo.ml-0(href="#")
@@ -30,8 +30,12 @@ header.pt-4
             a.d-flex.flex-column-reverse.d-md-none(href="#") Реактор
               img(src="/images/svg/company.svg", alt="search" width="22" height="22")        
           li.nav__item.dropdown.d-none.d-md-block
-            a.p-3(href="#") 
+            a#dropdownMenuNotification.p-3(role='button' data-toggle='dropdown' aria-expanded='false')
               img(src="/images/svg/Vector.svg", alt="" width="22" height="29")
               span.badge.badge-danger.text-wrap 99+
+            .dropdown-menu.dropdown-menu-right(aria-labelledby='#dropdownMenuNotification')
+              a.dropdown-item(href='#') 1
+              a.dropdown-item(href='#') 2
+              a.dropdown-item(href='#') 3
   hr.bottom-line   
 

@@ -70,7 +70,29 @@
   background-color: #F5E3F9;
 }
 
+
+//spacing 
+.mx-n1 {
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+}
+
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;  
 }
+
+
+.align-sub {
+  vertical-align: sub !important;
+}
+
+.dropdown.show {
+  .arrow-up{ transform: rotate(180deg); line-height: 0; }
+}
+
+.active-down{ transform: rotate(90deg); line-height: 0;} 
+.active-up { transform: rotate(180deg); line-height: 0;} 
+
+

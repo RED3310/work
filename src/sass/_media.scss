@@ -1,20 +1,19 @@
 @media (max-width: 767.98px) {
-  header {.header-bottom {li { margin-left: 30px;}  a { font-size: 14px;} } }
+  .header { &__bottom {li { margin-left: 30px;}  a { font-size: 14px;} } }
   .fs { &-24 { font-size: 19px;} }
-  
-  .content .badge-danger { left: 8.4rem; top: 0.2rem; }
+  .main { &__content .badge-danger { left: 8.4rem; top: 0.2rem; }}
   .responses h2 { font-size: 17px;}
 }
 
 
 @media (max-width: 575.98px) {
-  header { .header-bottom { li { margin-left: 20px;} a { font-size: 12px; } } }
+  .header { &__bottom { li { margin-left: 20px;} a { font-size: 12px; } } }
   .resize-xs { margin: 0 -8px; }
 }
 
 
 @media (max-width: 489.98px) {
-  .content {
+  .main__content {
     .vacancy button { margin-bottom: 10px; }  
   }
 }

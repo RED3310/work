@@ -1,12 +1,10 @@
 
 @import 'node_modules/bootstrap/scss/bootstrap';
-
-// variables/customs-bootstrap
+// customs-bootstrap
 @import 'custom-bootstrap';
 // Configuration
-
-// partials
 @import 'material-icons';
 @import 'reset';
+// partials
 @import 'common';
 @import 'media';

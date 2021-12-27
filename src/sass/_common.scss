@@ -1,22 +1,15 @@
-header {
+.header {
   background-color: #ffff;
-  .bottom-line {
-    background: linear-gradient(93.65deg, #DE216B -5.03%, #009FF4 103.91%, #8D4F9D 103.91%);
-    height: 10px;
-    border: 0;
-    margin: 0;
-  }
- 
-  .header-top {
+  &__top {
     a { color: #ABB2BA !important;
       &:hover { color: #ABB2BA !important;}
     }
   }
   
-  .header-bottom {
+  &__bottom {
     li { 
       margin-left: 40px;
-      &:last-child { margin-left: 24px;}
+      &:last-child { margin-left: 24px;} 
     }
     a {
       color: #0094DF !important;
@@ -35,80 +28,90 @@ header {
       left: 1.5rem;
     }
   }
+
+  &__hr {
+    background: linear-gradient(93.65deg, #DE216B -5.03%, #009FF4 103.91%, #8D4F9D 103.91%);
+    height: 10px;
+    border: 0;
+    margin: 0;
+  }
 }
 
-.content {
-  a {
-    color: #0094DF !important;
-    font-weight: 400;
-    &:hover { color: #0094DF !important;}
-  } 
-
-  .card .nav a {
-    &:hover,
-    &:focus {
-      color: #FF9500 !important;
-    }
-  }
-
-  .vacancy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    &__content {
-      border-top: 1px solid #E9EBED;
-      border-bottom: 1px solid #E9EBED;  
-      li { margin: 15px 0;}
-    }
-  }
-
-  .search {
-    transition: z-index 0.8s, width 0.5s, border 0.3s;
-    position: relative;
-    z-index: 5;
-    color: #222;
-    height: 28px;
-    font-size: 14px;
-    cursor: text;
-    border: none;
-    width: 0;
-    box-sizing: border-box;
-    background: transparent;
-    border-radius: 0;
-    &:focus {
-      border-bottom: 1px solid #ABB2BA;
-      width: 180px;
-    }
-    &:focus-visible {
-      outline: none;
-    }
-  }
-
-  .badge {
-    font-weight: 400;
-    padding: 0.4em 0.7em;
-    border-radius: 1rem;
-  }
+.main {
+  &__content {
+    a {
+      color: #0094DF !important;
+      font-weight: 400;
+      &:hover { color: #0094DF !important;}
+    } 
   
-  .badge-danger {
-    position: absolute;
-    font-weight: 400;
-    padding: 0.25em 0.6em;
-    border-radius: 1rem;
-    font-size: 12px;
-    left: 4.6rem;
-    top: -0.3rem;
-  }
+    .card .nav a {
+      &:hover,
+      &:focus {
+        color: #FF9500 !important;
+      }
+    }
+  
+    .vacancy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &__content {
+        border-top: 1px solid #E9EBED;
+        border-bottom: 1px solid #E9EBED;  
+        li { margin: 15px 0;}
+      }
+    }
+  
+    .search {
+      transition: z-index 0.8s, width 0.5s, border 0.3s;
+      position: relative;
+      z-index: 5;
+      color: #222;
+      height: 28px;
+      font-size: 14px;
+      cursor: text;
+      border: none;
+      width: 0;
+      box-sizing: border-box;
+      background: transparent;
+      border-radius: 0;
+      &:focus {
+        border-bottom: 1px solid #ABB2BA;
+        width: 180px;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  
+    .badge {
+      font-weight: 400;
+      padding: 0.4em 0.7em;
+      border-radius: 1rem;
+    }
+    
+    .badge-danger {
+      position: absolute;
+      font-weight: 400;
+      padding: 0.25em 0.6em;
+      border-radius: 1rem;
+      font-size: 12px;
+      left: 4.6rem;
+      top: -0.3rem;
+    }
+  
+    .border-btm { 
+      border-bottom: 1px dashed #74C241 !important; 
+      line-height: 1 !important; }
+    }
+}
 
-  .border-btm { 
-    border-bottom: 1px dashed #74C241 !important; 
-    line-height: 1 !important; }
-  }
 
+.footer {
 
-footer {
-  .bottom-line {
+  &__hr {
     background: #E42469;
     height: 1px;
     border: 0; 
@@ -128,9 +131,28 @@ footer {
 }
 
 //arrow-rotate
-.dropdown.show {
-  .arrow-up{ transform: rotate(180deg); line-height: 0; }
-}
+.dropdown.show { .arrow-up{ transform: rotate(180deg); line-height: 0; } }
+
 .active-down{ transform: rotate(90deg); line-height: 0;} 
 .active-up { transform: rotate(180deg); line-height: 0;} 
 
+//dropdown-menu (vacancy(main))
+.dropdown-menu-vacancy {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 375px;
+  padding: 0.5rem 1rem;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}

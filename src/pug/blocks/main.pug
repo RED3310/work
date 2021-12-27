@@ -1,6 +1,6 @@
-main 
+main.main 
   .container 
-    .content.pt-3.pb-5.fs-17
+    .main__content.pt-3.pb-4.fs-17
       a: span.material-icons.md-20.align-sub chevron_left
         a(href="#") Личный раздел    
       h2.font-weight-bold Вакансии и отклики
@@ -8,8 +8,45 @@ main
           img(src="/images/svg/Vector (2).svg", alt="" width="19" height="19")
       h6.font-weight-bold.text-dark.fs-17 У вас еще нет вакансий.
       p.text-dark Чтобы начать активный поиск сотрудников, создайте ваши вакансии. Помните! Большинство соискателей не размещают резюме на сайте, а отправляют их прямо на найденные вакансии. Поэтому размещайте вакансии, и вы значительно увеличите шансы найти сотрудника.
-      .vacancy.my-3
+      .vacancy.my-4
         span
           button.btn.btn-success.px-4.py-2.mr-4.fs-17(type='button') Создать вакансию
           span.text-nowrap.text-success.mr-2 Доступна 
-            button.text-success.border-btm.p-0.ml-1(type='button'  data-toggle='popover' data-container='body' data-placement='bottom' data-content='...' ) 21 из 630 публикаций    
+            span.dropdown
+              button.text-success.border-btm.p-0.ml-1(type='button' data-container='body' data-toggle='popover' data-placement='bottom' data-content='...') 21 из 630 публикаций 
+              //- button#dropdownMenuInfo.text-success.border-btm.p-0.ml-1(href='#' role='button' data-toggle='dropdown' aria-expanded='false')  21 из 630 публикаций  
+              //- ul.dropdown-menu.dropdown-menu-vacancy(aria-labelledby='dropdownMenuInfo')
+              //-   li.d-flex.justify-content-between      
+              //-     span
+              //-       p Standard Plus возобновляемая
+              //-       p.text-secondary до 14.03.2020
+              //-     span
+              //-       p 11 из 311
+              //-   hr.my-1
+              //-   li.d-flex.justify-content-between.flex-wrap      
+              //-     span
+              //-       p Premium возобновлемая
+              //-       p.text-secondary до 14.03.2020
+              //-     span
+              //-       p 5
+              //-   hr.my-1
+              //-   li.d-flex.justify-content-between.flex-wrap       
+              //-     span
+              //-       p Premium 
+              //-     span
+              //-       p 309
+              //-   hr.my-1
+              //-   li.d-flex.justify-content-between.flex-wrap       
+              //-     span
+              //-       p Анонимная возобновляемая
+              //-       p.text-secondary до 14.03.2020
+              //-     span
+              //-       p 5
+              //-   hr.my-1
+              //-   li: ul.pl-3.text-secondary(type="disc")
+              //-     li.mt-3: a(href="#") Подробнее о публикациях
+              //-     li.my-2: a(href="#") Купить публикации от 349 грн
+              //-     li.my-2: a(href="#") Купить пакеты услуг (публикации и доступ
+              //-       |
+              //-       br
+              //-       | к базе резюме) от 390 грн
